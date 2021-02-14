@@ -1,0 +1,6 @@
+name: InventoryMenu
+main: net.plazmix.inventory_menu.InventoryMenuPlugin
+version: ${project.version}
+depend: [ Core-spigot ]
+authors:
+  - MasterCapeXD

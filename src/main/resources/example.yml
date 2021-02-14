@@ -1,0 +1,68 @@
+commands:
+  - 'example'
+permission: ''
+
+# Supported view options:
+# - GLOBAL - creates a menu once for all players
+# - PERSONAL - creates a new menu instance for each player
+view: GLOBAL
+
+# Inventory title
+# Supported placeholders:
+# - $PLAYER
+# WARNING: placeholders work only with PERSONAL view
+title: 'Example Menu'
+
+# Supported types:
+# - CHEST
+# - DISPENSER
+# - DROPPER
+# - FURNACE
+# - WORKBENCH
+# - CRAFTING
+# - ENCHANTING
+# - BREWING
+# - PLAYER
+# - CREATIVE
+# - MERCHANT
+# - ENDER_CHEST
+# - ANVIL
+# - BEACON
+# - HOPPER
+type: CHEST
+
+# How many rows should menu contain
+# This option is used if inventory type is CHEST
+rows: 3
+
+# Actions:
+# - open_other:name (without .yml)
+# - close
+# - refresh
+# - refresh_all
+# - server:name
+# - command:cmd (without /)
+# - message:text
+# - sound:SOUND;volume;pitch
+# - next_page
+# - previous_page
+# - first_page
+# - last_page
+
+# Action list on inventory open
+on-open: [ ]
+# Action list on inventory close
+on-close: [ ]
+
+pagination:
+  enabled: false
+  schema: '10 11 12 13 14 15 16'
+  content: { }
+
+content:
+  apple:
+    icon:
+      - 'type:APPLE'
+      - 'display:&cApple'
+    slot: 0
+    on-click: [ ]
